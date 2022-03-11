@@ -1,4 +1,4 @@
-# Github profile display
+# Shopping List App
 
 ![This is an image](../assets/with-passion.png)
 
