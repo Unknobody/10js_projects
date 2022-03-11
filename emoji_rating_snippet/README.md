@@ -4,6 +4,8 @@
 
 Système de vote avec des émojis qui changent d'humeur en fonction du nombre d'étoiles données.
 
+![This is an image](../assets/emoji_rating.jpg)
+
 ## Introduction
 
 Code réutilisable pour d'autres projets.
