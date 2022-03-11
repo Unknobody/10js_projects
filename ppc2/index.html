@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">  <meta property="og:title" content="Pierre, Papier, Ciseaux v2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Enfin la mise à jour que vous attendiez pas ! Avec en exclusivité le mode multijoueurs (contre l'ordi)" />
+  <meta property="og:image" content="https://www.unknobody.xyz/uapps/ppc2/images/presfb2.jpg" />
+  <meta property="og:image:width" content="1000px" />
+  <meta property="og:image:height" content="522px" />
+  <meta property="og:url" content="https://www.unknobody.xyz/uapps/ppc2/" />
+
+  <title>Pierre, Papier, Ciseaux</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>
+        <span>Pierre</span>
+        <span>&nbsp;Papier</span>
+        <span>&nbsp;&nbsp;Ciseaux</span>
+      </h1>
+      <div class="score-container">
+        <h4>Score</h4>
+        <p id="score">0</p>
+      </div>
+    </header>
+
+    <main id="main">
+      
+      <button class="btn-circle btn-paper pick" data-choice="paper">
+        <span class="wrapper">
+          <img src="./images/icon-paper.svg" alt="icone papier">
+        </span>
+      </button>
+
+      <button class="btn-circle btn-scissors pick" data-choice="scissors">
+        <span class="wrapper">
+          <img src="./images/icon-scissors.svg" alt="icone ciseaux">
+        </span>
+      </button>
+
+      <button class="btn-circle btn-rock pick" data-choice="rock">
+        <span class="wrapper">
+          <img src="./images/icon-rock.svg" alt="icone pierre">
+        </span>
+      </button>
+    </main>
+
+
+    <div class="rules-modal" id="modal">
+      <h4>Règles du jeu</h4>
+        <p>La Pierre bat les Ciseaux<br>
+        Les Ciseaux battent le Papier<br>
+        Le Papier bat la Pierre</p>
+        <button id="close"><img src="./images/icon-close.svg" alt="fermer"></button>
+    </div>
+
+
+    <button class="btn-rules" id="open">Règles</button>
+  </div>
+
+  <div class="selection" id="selection">
+
+    <div class="choix">
+      <h2>T'as choisi</h2>
+      <button class="btn-circle btn-paper" data-choice="paper" id="user-select">
+        <span class="wrapper">
+          <img src="./images/icon-paper.svg" alt="icone papier">
+        </span>
+      </button>
+    </div>
+
+    <div class="go-down">
+      <p class="big-text"><span id="win"></span></p>
+      <button id="reset" class="btn">
+        Rejouer
+      </button>
+  </div>
+
+    
+    <div class="choix">
+      <h2>L'app a choisi</h2>
+      <button class="btn-circle btn-scissors" data-choice="scissors" id="app-select">
+        <span class="wrapper">
+          <img src="./images/icon-scissors.svg" alt="icone ciseaux">
+        </span>
+      </button>
+    </div>
+
+    
+  
+
+  </div>
+  <div class="space"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

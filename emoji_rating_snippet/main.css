@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #181818;
+}
+
+.emoji-rating-container {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    border-radius: .7rem;
+    position: relative;
+}
+
+.emoji-rating-container .emojis-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.emoji-rating-container .emojis-container .far {
+    margin: 1px;
+    transform: translateX(0);
+}
+
+.emoji-rating-container .stars-rating-container {
+    margin-top: 50px;
+}
+
+.emoji-rating-container .stars-rating-container .fa-star {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.emoji-rating-container .stars-rating-container .fa-star.active {
+    color: gold;
+}

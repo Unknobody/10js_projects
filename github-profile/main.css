@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 25px;
+  padding-bottom: 120px;
+}
+
+input {
+  background: #009ffd;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 2px solid white;
+  position: fixed;
+  bottom: 20px;
+  left: 5%;
+  width: 90%;
+  font-family: inherit;
+}
+
+input:focus-visible {
+  border: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.363);
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  color: white;
+  max-width: 90%;
+  margin: auto;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.user-info {
+}
+
+.user-info h2 {
+  text-align: center;
+}
+
+.user-bio {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.user-info ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.user-info ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info ul li span {
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+}
+
+#repos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.repo {
+  background-color: #009ffd;
+  display: inline-block;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.377);
+}
